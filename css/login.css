@@ -1,0 +1,183 @@
+.signUp {
+    margin-top: 50px;
+    background-color: rgba(246, 246, 246, 0.8);
+    border-bottom: 3px dashed rgba(160, 160, 160, 0.589);
+
+}
+
+.signUpTitle,
+.regTitle {
+    position: absolute;
+    top: -150px;
+    left: -70px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #000;
+    border-left: 10px solid rgb(33, 137, 29);
+    padding-left: 15px;
+    transition: 0.3s;
+}
+
+.regTitle {
+    border-left: 10px solid rgb(16, 108, 151);
+
+}
+
+@media screen and (max-width: 660px) {
+
+    .signUpTitle,
+    .regTitle {
+        left: 76px;
+        border-left: 0;
+    }
+}
+
+.loginNotice {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-top: -42px;
+    margin-left: -71px;
+    padding: 4px;
+    font-family: 'icomoon';
+    font-size: 13px;
+    line-height: 22px;
+    border-radius: 5px;
+}
+
+.warning{
+    color: #83000b;
+    background-color: rgba(219, 3, 3, .5);
+    animation-name: shake;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}
+
+.success{
+    color: #064400;
+    background-color: rgba(118, 219, 3, 0.5);
+}
+
+.loginNotice i {
+    font-size: 13px;
+
+}
+
+.loginForm {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 342px;
+    height: 360px;
+    margin: 260px auto;
+    /* padding: 150px 150px; */
+    /* border: 1px solid; */
+}
+
+.loginForm ul {
+    height: 230px;
+    width: 342px;
+}
+
+.loginForm ul li {
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+
+}
+
+.loginForm ul li label {
+    display: inline-block;
+    width: 88px;
+    margin-right: 8px;
+    text-align: center;
+    font-size: 13px;
+
+}
+
+.loginForm ul li .inp {
+    width: 242px;
+    height: 37px;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+.error {
+    margin: auto;
+    color: #c81523;
+    font-size: 14px;
+    line-height: 30px;
+    width: 75%;
+}
+
+.error i {
+    margin-top: 3px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.goReg {
+    float: right;
+    margin: 0 auto;
+    padding-left: 190px;
+    width: 330px;
+    font-size: 13px;
+}
+
+.goReg span {
+    color: rgb(76, 153, 254);
+    cursor: pointer;
+}
+
+.goReg span i {
+    font-size: 13px;
+}
+
+.btn {
+    margin: 0 0 0 99px;
+    width: 242px;
+    height: 34px;
+    background-color: rgb(76, 76, 76);
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agree {
+    padding-left: 100px;
+}
+
+.agree a {
+    text-decoration: underline;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(10px, 0px);
+    }
+    20% {
+        transform: translate(0px, 0px);
+    }
+
+    40% {
+        transform: translate(-10px, 0px);
+    }
+
+    600% {
+        transform: translate(0px, 0px);
+    }
+
+    80% {
+        transform: translate(10px, 0px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}

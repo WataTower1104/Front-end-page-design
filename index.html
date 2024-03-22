@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>某领域</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/mainPage.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/base.js"></script>
+    <script>
+        window.onload = function () {
+            base();
+            index();
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?8rppqz');
+            src: url('fonts/icomoon.eot?8rppqz#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?8rppqz') format('truetype'),
+                url('fonts/icomoon.woff?8rppqz') format('woff'),
+                url('fonts/icomoon.svg?8rppqz#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 网页顶部导航栏start -->
+    <section class="shortcut">
+        <!-- 网站logo -->
+        <div class="logo">
+            <a href="index.html" title="看这里！">回到首页</a>
+        </div>
+        <!-- 欢迎标语 -->
+        <div class="welcomes clearfix">
+            <ul>
+                <li>欢迎来到这个地方 &nbsp;|&nbsp;</li>
+                <li>
+                    <a href="welcome.html" target="blank"">回到欢迎页</a>&nbsp;或者&nbsp;<a href=" #"
+                        onclick="notices()">投诉与建议</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="search">
+            <input type="text" placeholder="我不知道，只有你才知道">
+            <button onclick="notices()"></button>
+        </div>
+        <!-- 快捷导航方格 -->
+        <div class="nav clearfix">
+            <ul>
+                <li><a href="javascript:void(0)" onclick="notices()">我的</a></li>
+                <li><a href="javascript:void(0)" onclick="notices()">收藏</a></li>
+                <li><a href="javascript:void(0)" onclick="notices()">小事吐槽</a></li>
+                <li><a href="javascript:void(0)" onclick="notices()">上传时间线</a></li>
+            </ul>
+        </div>
+        <div class="navStack">
+            <i class="navIcon"></i>
+
+        </div>
+        <div class="navMenu">
+            <div class="navSearch">
+                <input type="text" placeholder="我不知道，只有你才知道">
+                <button><i><a href=""></a></i></button>
+            </div>
+            <div class="navItem"><a href="javascript:void(0)" onclick="notices()">我的</a></div>
+            <div class="navItem"><a href="javascript:void(0)" onclick="notices()">收藏</a></div>
+            <div class="navItem"><a href="javascript:void(0)" onclick="notices()">小事吐槽</a></div>
+            <div class="navItem"><a href="javascript:void(0)" onclick="notices()">上传时间线</a></div>
+        </div>
+    </section>
+    <!-- 网页顶部导航栏end -->
+
+    <div id="mainPage" class="w">
+
+        <!-- 广告位START -->
+        <div class="banner clearfix">
+            <div id="sliderShow" class="middle">
+                <div class="goLeft" onclick="prew()"><i></i></div>
+                <div class="goRight" onclick="next()"><i></i></div>
+                <div id="slides">
+                    <input type="radio" value="" name="r" id="r1" checked>
+                    <input type="radio" value="" name="r" id="r2">
+                    <input type="radio" value="" name="r" id="r3">
+                    <input type="radio" value="" name="r" id="r4">
+                    <input type="radio" value="" name="r" id="r5">
+
+                    <div class="slide s1">
+                        <img src="images/banner_pic/banner-1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/banner_pic/banner-2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/banner_pic/banner1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/banner_pic/banner3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/banner_pic/banner4.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
+                </div>
+
+            </div>
+        </div>
+        <!-- 广告位END -->
+
+        <!-- 打招呼START -->
+        <div id="signIn">
+            <div id="sayHello">
+                晚上好！
+            </div>
+            <div id="userInfo" class="clearfix">
+                <div class="avt">
+                    <img src="images/avatar_pic/noavatar_middle.gif" alt="">
+                </div>
+                <div class="isSign">
+                    <div class="signOrReg">
+                        <span>路过的游客，你可以选择</span>
+                        <a href="login.html">登录 </a>
+                    </div>
+
+                    <div class="userBar">
+                        <span class="userName"><a href="javascript:void(0)">綿Tower</a></span>
+                        <ul class="clearfix">
+                            <li><a href="javascript:void(0)" onclick="isclear()">注销</a></li>
+                            <li class="pipe">/</li>
+                            <li><a href="javascript:void(0)" onclick="notices()">设置</a></li>
+                            <li class="pipe">/</li>
+                            <li><a href="javascript:void(0)" onclick="notices()">收藏</a></li>
+                            <li class="pipe">/</li>
+                            <li><a href="javascript:void(0)" onclick="notices()">我的</a></li>
+
+                        </ul>
+                        <span class="greetChange">或者 <a href="javascript:void(0)"
+                                onclick="changeGreet()">换一个问候</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 打招呼END -->
+
+        <!-- 时间线START -->
+        <div class="timeLine">
+            <div class="timeLineTitle">
+                <h4>时间线</h4>
+            </div>
+            <div class="timeLineBox">
+                <ul>
+                    <li class="timeLineItem clearfix">
+                        <div class="timeLinePreview">
+                            <img src="images/preview_pic/pre-1.jpg" alt="">
+                        </div>
+                        <div class="timeLineItemInfo">
+                            <div class="mainInfo">
+                                <div class="itemTitle">
+                                    <span class="itemType liveNotice notCopy">#直播预告</span>
+                                    <span class="titleName">【屋岛放映室第5期】</span>
+                                </div>
+                                <div class="epito">
+                                    <!-- 概括、摘要 -->
+                                    <i class="liveNotice-i"></i>
+                                    <a href="article.html"">剧场版 少女☆歌剧 Revue Starlight(可打开)</a>
+
+                                </div>
+                                <div class=" uploader">
+                                        <a href="javascript:void(0)">綿Tower</a>
+                                </div>
+                            </div>
+
+                            <div class="otherInfo clearfix">
+                                <div class="targetTime">
+                                    6月20日19:00
+                                </div>
+                                <div class="targetSite">
+                                    <a href="article.html">传送门</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeLineItem clearfix">
+                        <div class="timeLinePreview">
+                            <img src="images/preview_pic/pre-2.png" alt="">
+                        </div>
+                        <div class="timeLineItemInfo">
+                            <div class="mainInfo">
+                                <div class="itemTitle">
+                                    <span class="itemType showIntro notCopy">#节目推荐</span>
+                                    <span class="titleName">【2022年7月秋季】</span>
+                                </div>
+                                <div class="epito">
+                                    <!-- 概括、摘要 -->
+                                    <i class="showIntro-i"></i>
+                                    <a href="javascript:void(0)" onclick="notices()">少女☆歌剧 Revue Starlight</a>
+
+                                </div>
+                                <div class="uploader">
+                                    <a href="#">綿Tower</a>
+                                </div>
+                            </div>
+
+                            <div class="otherInfo clearfix">
+                                <div class="targetTime">
+                                    6月20日19:00
+                                </div>
+                                <div class="targetSite">
+                                    <a href="#">传送门</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeLineItem clearfix">
+                        <div class="timeLinePreview">
+                            <img src="images/preview_pic/pre-3.jpg" alt="">
+                        </div>
+                        <div class="timeLineItemInfo">
+                            <div class="mainInfo">
+                                <div class="itemTitle">
+                                    <span class="itemType itemEvalua notCopy">#新物品鉴</span>
+                                    <span class="titleName">【GoodSmile】</span>
+                                </div>
+                                <div class="epito">
+                                    <!-- 概括、摘要 -->
+                                    <i class="itemEvalua-i"></i>
+                                    <a href="javascript:void(0)" onclick="notices()">西红柿</a>
+
+                                </div>
+                                <div class="uploader">
+                                    <a href="#">綿Tower</a>
+                                </div>
+                            </div>
+
+                            <div class="otherInfo clearfix">
+                                <div class="targetTime">
+                                    6月20日19:00
+                                </div>
+                                <div class="targetSite">
+                                    <a href="#">传送门</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeLineItem clearfix">
+                        <div class="timeLinePreview">
+                            <img src="images/preview_pic/pre-4.jpg" alt="">
+                        </div>
+                        <div class="timeLineItemInfo">
+                            <div class="mainInfo">
+                                <div class="itemTitle">
+                                    <span class="itemType videoRelease notCopy">#视频更新</span>
+                                    <span class="titleName">【MAD/AMV】</span>
+                                </div>
+                                <div class="epito">
+                                    <!-- 概括、摘要 -->
+                                    <i class="videoRelease-i"></i>
+                                    <a href="javascript:void(0)" onclick="notices()">Fly me to the Star</a>
+
+
+                                </div>
+                                <div class="uploader">
+                                    <a href="#">綿Tower</a>
+                                </div>
+                            </div>
+
+                            <div class="otherInfo clearfix">
+                                <div class="targetTime">
+                                    6月20日19:00
+                                </div>
+                                <div class="targetSite">
+                                    <a href="#">传送门</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeLineItem clearfix">
+                        <div class="timeLinePreview">
+                            <img src="images/preview_pic/pre-5.png" alt="">
+                        </div>
+                        <div class="timeLineItemInfo">
+                            <div class="mainInfo">
+                                <div class="itemTitle">
+                                    <span class="itemType articlePublish notCopy">#文章发布</span>
+                                    <span class="titleName">【只求一战】</span>
+                                </div>
+                                <div class="epito">
+                                    <!-- 概括、摘要 -->
+                                    <i class="articlePublish-i"></i>
+                                    <a href="javascript:void(0)" onclick="notices()">当我们在观赏的时候，我们应该得到什么</a>
+                                </div>
+                                <div class="uploader">
+                                    <a href="#">綿Tower</a>
+                                </div>
+                            </div>
+
+                            <div class="otherInfo clearfix">
+                                <div class="targetTime">
+                                    6月20日19:00
+                                </div>
+                                <div class="targetSite">
+                                    <a href="#">传送门</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(".epito").mouseover(function (e) {
+                e.target.title = e.target.textContent;
+            })
+            // alert(document.documentElement.clientWidth)
+
+        </script>
+        <!-- 时间线END -->
+    </div>
+
+
+    <!-- 回到顶部START -->
+    <div class="toTop">
+        
+    </div>
+    <!-- 回到顶部END -->
+
+    <!-- 弹出提醒START -->
+    <div id="light" class="white_content">
+        <a href="javascript:void(0)"
+            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"></a>
+        </br>
+        <div class="notice">
+            <i></i><br>
+            新功能开发中
+        </div>
+
+    </div>
+    <div id="fade" class="black_overlay"></div>
+    <!-- 弹出提醒START -->
+
+    <!-- 网页底栏start -->
+    <footer class="footer">
+        Copyright © 2022-2022
+    </footer>
+    <!-- 网页底栏end -->
+</body>
+
+</html>

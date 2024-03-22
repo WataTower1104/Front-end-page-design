@@ -1,0 +1,86 @@
+body {
+    background-image: linear-gradient(136deg, #ffffff,#606060, #252525);
+    /*背景颜色渐变*/
+    height: 100vh;
+    /*高度：100视窗*/
+    transition:2s;
+}
+
+#container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    /*主轴对齐方式*/
+    align-items: center;
+    /*交叉轴对齐方式*/
+    background: url(../images/bg_pic/bgw-1.png), #151729;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+#container .content {
+    max-width: 600px;
+    /*最大宽度*/
+    text-align: center;
+    /*字体行居中*/
+}
+
+#container .content h2 {
+    margin-bottom: 0.5em;
+    font-size: 90px;
+    /*字体大小*/
+    color: #fff;
+    line-height: 90px;
+    /*行高*/
+}
+
+#container .content h4 {
+    position: relative;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #111;
+    background: rgba(199, 199, 199, .59);
+    font-weight: 300;
+    padding: 0px 20px;
+    display: inline-block;
+    /*行内盒模型*/
+}
+
+#container ul li{
+    position: relative;
+    margin-bottom: 2.2em;
+    line-height: 1.2em;
+    transition: 0.418s;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    
+}
+
+#container ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #cdcdcd;
+    line-height: 1.8em;
+    font-size: 2.5em;
+}
+
+#container ul li:hover{
+    background-color: rgba(0, 0, 0, 0.315);
+    margin-left:25px;
+    margin-right:25px;
+
+
+}
+
+#container ul li:hover .goLink{
+    color: rgb(247, 247, 247);
+}

@@ -1,0 +1,263 @@
+body{
+    background-image: url(../images/article_pic/Revue_Starlight_new_movie_kv3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-position-y: 48px;
+}
+
+
+.articlePage,.recommend{
+    margin-top: 50px;
+    background-color: rgba(255,255,255,0.9);;
+    padding: 1rem 2rem 2rem;
+    border-radius: 10px;
+    box-shadow:
+    1px 2px 2px rgba(187, 187, 187, 0.1),
+    2px 4px 4px rgba(187, 187, 187, 0.1),
+    4px 8px 8px rgba(187, 187, 187,0.1),
+    8px 16px 16px rgba(0, 0, 0, 0.5),
+    16px 32px 32px rgba(27, 27, 27, 0.5)
+    ;
+}
+
+.headImg{
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    text-align: left;
+    margin: 5px 0;
+    color: #000;
+}
+
+
+
+#title h2{
+    font-size: 35px;
+    line-height: 35px;
+    margin: 5px 0;
+}
+
+#title p{
+    margin: 5px 0;
+    font-size: 13.67px;
+}
+
+#date {
+    margin-right: 20px;
+    color: #2C3E50;
+    font-size: 12px;
+}
+
+#source {
+    color: #2C3E50;
+    font-size: 12px;
+}
+
+#summary a{
+    text-decoration: underline;
+}
+
+#summary,h4{
+    text-indent: 2em;
+}
+
+.titleHint{
+    display: inline-block;
+    border-left: 5px solid rgb(233, 6, 41);
+    padding-left: 5px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 15px;
+    width: 100%;
+
+}
+
+.imageBox{
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    width: 30%;
+    height:100%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.imageBox .box{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0;   
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.box .visualImgNum{
+    margin-top: 8px;
+}
+
+.imageBox .visualImg{
+    margin-top: 11px;
+    width: 60%;
+    vertical-align: middle;
+    /* height: 100%; */
+}
+
+.outerVideo{
+    margin-bottom: 15px;
+}
+
+.content{
+    font-size: 14px;
+}
+
+.content p{
+    text-indent: 2em;
+    line-height: 25px;
+}
+
+.content h2{
+    margin-bottom: 25px;
+}
+
+.content ul li{
+    margin: 10px 0 ;
+    margin-left: 25px;
+    list-style:disc;
+}
+
+.cast{
+    width: 100%;
+}
+
+.left-column,.right-column{ 
+    float: left;
+    margin-left: 25px;
+}
+
+.right-column{
+    margin-left: 225px;
+}
+
+.cast ul{
+    width: 200px;
+}
+.cast ul li{
+    list-style:disc;
+    margin: 8px 0 ;
+    font-size: 14px;
+}
+
+.siteLink{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 20%;
+    cursor: pointer;
+    border: 3px solid rgb(150, 150, 150);
+    border-radius: 15px;
+}
+
+.linkPic{
+    margin: 5px 0;
+    width: 60px;
+    height: 60px;
+    font-family: 'icomoon';
+}
+
+.linkPic i{
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.linkState{
+    margin: 5px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.otherRecom{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin:0 10px;
+}
+
+.left-col,.right-col{
+    width: 40%;
+}
+
+.otherRecom ul li a{
+    list-style: disc;
+
+}
+
+.otherRecom ul li{
+    margin: 5px 0;
+    padding: 3px 0;
+    font-size: 14px;
+    border-bottom: 2px dashed rgba(102, 102, 102, 0.589);
+    overflow:hidden; /*超出的部分隐藏起来。*/
+    text-overflow:ellipsis;/* 支持 IE */
+    display:-webkit-box; 
+    /* 将对象作为弹性伸缩盒子模型显示。 */
+    -webkit-box-orient:vertical; 
+    /* 从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式） */
+    -webkit-line-clamp:1; 
+    /* 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。 */
+}
+
+.otherRecom table tr td{
+    margin: 5px 0;
+    padding: 3px 0;
+    font-size: 14px;
+    border-bottom: 2px dashed rgba(102, 102, 102, 0.589);
+    overflow:hidden; /*超出的部分隐藏起来。*/
+    text-overflow:ellipsis;/* 支持 IE */
+    display:-webkit-box; 
+    /* 将对象作为弹性伸缩盒子模型显示。 */
+    -webkit-box-orient:vertical; 
+    /* 从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式） */
+    -webkit-line-clamp:1; 
+    /* 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。 */
+}
+
+@media screen and (max-width: 1000px){
+    .imageBox{
+        width: 220px;
+    }
+    .siteLink{
+        width: 146px;
+    }
+}
+
+@media screen and (max-width: 968px){
+    .right-column{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .left-col,.right-col{
+        width: 100%;
+    }
+    .otherRecom ul li,.otherRecom table tr td{
+        margin: 10px 0;
+    }
+}

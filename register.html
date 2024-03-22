@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 / 注册 -某领域</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+                window.onload = function () {
+            base();
+            index();
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?2yq27s');
+            src: url('fonts/icomoon.eot?2yq27s#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?2yq27s') format('truetype'),
+                url('fonts/icomoon.woff?2yq27s') format('woff'),
+                url('fonts/icomoon.svg?2yq27s#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 网页顶部导航栏start -->
+    <section class="shortcut">
+        <!-- 网站logo -->
+        <div class="logo">
+            <a href="index.html" title="看这里！">回到首页</a>
+        </div>
+        <!-- 欢迎标语 -->
+        <div class="welcomes clearfix">
+            <ul>
+                <li>欢迎来到这个地方 &nbsp;|&nbsp;</li>
+                <li>
+                    <a href="javascript:void(0)" target="blank"">回到欢迎页</a>&nbsp;或者&nbsp;<a href=" #"
+                        onclick="notices()">投诉与建议</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="search">
+            <input type="text" placeholder="我不知道，只有你才知道">
+            <button onclick="notices()"></button>
+        </div>
+        <!-- 快捷导航方格 -->
+        <div class="nav clearfix">
+            <ul>
+                <li><a href="javascript:void(0)" onclick="notices()">我的</a></li>
+                <li><a href="javascript:void(0)" onclick="notices()">收藏</a></li>
+                <li><a href="javascript:void(0)" onclick="notices()">小事吐槽</a></li>
+                <li><a href="javascript:void(0)" onclick="notices()">上传时间线</a></li>
+            </ul>
+        </div>
+        <div class="navStack">
+            <i class="navIcon"></i>
+
+        </div>
+        <div class="navMenu">
+            <div class="navSearch">
+                <input type="text" placeholder="我不知道，只有你才知道">
+                <button><i><a href=""></a></i></button>
+            </div>
+            <div class="navItem"><a href="javascript:void(0)" onclick="notices()">我的</a></div>
+            <div class="navItem"><a href="javascript:void(0)" onclick="notices()">收藏</a></div>
+            <div class="navItem"><a href="javascript:void(0)" onclick="notices()">小事吐槽</a></div>
+            <div class="navItem"><a href="javascript:void(0)" onclick="notices()">上传时间线</a></div>
+        </div>
+    </section>
+    <!-- 网页顶部导航栏end -->
+
+    <div class="signUp w">
+        
+        <div class="loginForm">
+            <div class="loginNotice warning">
+                <i class="notice-i"></i>
+                <span class="noticeText">显示信息显示信息显示信息</span>
+            </div>
+            <div class="regTitle">
+                注册
+            </div>
+            <form action="javascript:void(0)" method="post">
+                <ul>
+                    <li>
+                        <label for="tel">昵称&emsp;: </label>
+                        <input type="text" class="inp" id="name" placeholder="请输入昵称" autofocus maxlength="9">
+                    </li>
+                    <li>
+                        <label for="tel">邮箱&emsp;: </label>
+                        <input type="email" class="inp" id="tel" placeholder="输入你的邮箱">
+                    </li>
+                    <li>
+                        <label for="pwd">密码&emsp;: </label>
+                        <input type="password" class="inp" id="password" placeholder="输入你的密码">
+                    </li>
+                    <li>
+                        <label for="pwd">&emsp;</label>
+                        <input type="password" class="inp" id="affirmPassword" placeholder="确认你的密码">
+                    </li>
+                    <li class="agree"><input type="checkbox" name="" id="" class="agreeBox"> 
+                        同意协议并注册 <a href="#">《知晓用户协议》</a>
+                    
+                    </li>
+                    <li>
+                        <input type="button" onclick="affirm()" value="Register Now!" class="btn">
+                    </li>                   
+                    <li class="clearfix">
+                        <div class="goReg">已有账号？<span onclick="skipindex()">立即登录!<i></i></span></div>
+                    </li>                 
+                </ul>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- 回到顶部START -->
+    <div class="toTop">
+        
+    </div>
+    <!-- 回到顶部END -->
+
+    <!-- 弹出提醒START -->
+    <div id="light" class="white_content">
+        <a href="javascript:void(0)"
+            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"></a>
+        </br>
+        <div class="notice">
+            <i></i><br>
+            新功能开发中
+        </div>
+
+    </div>
+    <div id="fade" class="black_overlay"></div>
+    <!-- 弹出提醒START -->
+
+    <!-- 网页底栏start -->
+    <footer class="footer">
+        Copyright © 2022-2022
+    </footer>
+    <!-- 网页底栏end -->
+</body>
+
+</html>
